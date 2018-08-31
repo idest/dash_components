@@ -33,14 +33,25 @@ _js_dist = [
     {
         'relative_package_path': 'bundle.js',
         'external_url': (
-            'https://unpkg.com/my_dash_component'
+            'https://unpkg.com/idest_dash_components'
             '/' + package_name + '/bundle.js'
         ).format(__version__),
         'namespace': package_name
     }
 ]
 
-_css_dist = []
+_css_dist = [
+    {
+        'relative_package_path': [
+            'rc-slider@6.1.2.css',
+        ],
+        'external_url': [
+            'https://unpkg.com/rc-slider@6.1.2/assets/index.css',
+        ],
+        'namespace': 'dash_core_components'
+    }
+]
+
 
 
 for _component in _components:

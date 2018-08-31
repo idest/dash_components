@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import * as R from 'ramda';
 
 import {ExampleComponent} from '../lib';
+import {Slider} from '../lib';
 
 class App extends Component {
 
@@ -23,6 +24,10 @@ class App extends Component {
         return (
             <div>
                 <ExampleComponent
+                    setProps={this.setProps}
+                    {...this.state}
+                />
+                <Slider
                     setProps={this.setProps}
                     {...this.state}
                 />

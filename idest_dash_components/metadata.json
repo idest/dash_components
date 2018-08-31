@@ -1,0 +1,193 @@
+{
+  "src/lib/components/ExampleComponent.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "ExampleComponent",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this compnent in Dash callbacks"
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The value displayed in the input"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\nproperties change"
+      }
+    }
+  },
+  "src/lib/components/Slider.react.js": {
+    "description": "A slider component with a single handle.",
+    "displayName": "Slider",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "marks": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "number": {
+              "name": "union",
+              "value": [
+                {
+                  "name": "string"
+                },
+                {
+                  "name": "shape",
+                  "value": {
+                    "style": {
+                      "name": "object",
+                      "required": false
+                    },
+                    "label": {
+                      "name": "string",
+                      "required": false
+                    }
+                  }
+                }
+              ],
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "Marks on the slider.\nThe key determines the position,\nand the value determines what will show.\nIf you want to set the style of a specific mark point,\nthe value should be an object which\ncontains style and label properties."
+      },
+      "value": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The value of the input"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Additional CSS class for the root DOM node"
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the handles can't be moved."
+      },
+      "dots": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When the step value is greater than 1,\nyou can set the dots to true if you want to\nrender the slider with dots."
+      },
+      "included": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If the value is true, it means a continuous\nvalue is included. Otherwise, it is an independent value."
+      },
+      "min": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Minimum allowed value of the slider"
+      },
+      "max": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Maximum allowed value of the slider"
+      },
+      "step": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Value by which increments or decrements are made"
+      },
+      "vertical": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the slider will be vertical"
+      },
+      "updatemode": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'mouseup'",
+              "computed": false
+            },
+            {
+              "value": "'drag'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Determines when the component should update\nits value. If `mouseup`, then the slider\nwill only trigger its value when the user has\nfinished dragging the slider. If `drag`, then\nthe slider will update its value continuously\nas it is being dragged.\nOnly use `drag` if your updates are fast.",
+        "defaultValue": {
+          "value": "'mouseup'",
+          "computed": false
+        }
+      },
+      "fireEvent": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that gets fired when the checkbox item gets selected."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that gets fired when the value changes."
+      },
+      "dashEvents": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'change'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+}
