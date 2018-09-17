@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ReactSlider from 'rc-slider';
+import ReactSlider from 'rc-slider-fix';
 import PropTypes from 'prop-types';
 import {omit} from 'ramda';
 
@@ -20,6 +20,7 @@ export default class Slider extends Component {
         const {setProps, fireEvent, updatemode} = this.props;
         const {value} = this.state;
         return (
+          <div style={{'display':'flex'}}>
             <ReactSlider
                 onChange={value => {
                     this.setState({value});
@@ -36,7 +37,10 @@ export default class Slider extends Component {
                 }}
                 value={value}
                 {...omit(['fireEvent', 'setProps', 'updatemode', 'value'], this.props)}
+                style={{'flex':'1'}}
             />
+            <span style={{'margin-left':'10px', 'width':'4em'}}>{value}</span>
+          </div>
         );
     }
 }

@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+idest_dash_components/ExampleComponent.py
+idest_dash_components/Import.py
+idest_dash_components/Slider.py
+idest_dash_components/__init__.py
+idest_dash_components/_imports_.py
+idest_dash_components/bundle.js
+idest_dash_components/metadata.json
+idest_dash_components/package.json
+idest_dash_components/rc-slider@6.1.2.css
+idest_dash_components.egg-info/PKG-INFO
+idest_dash_components.egg-info/SOURCES.txt
+idest_dash_components.egg-info/dependency_links.txt
+idest_dash_components.egg-info/top_level.txt

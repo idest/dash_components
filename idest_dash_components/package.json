@@ -17,6 +17,7 @@
     "ramda": "^0.25.0",
     "rc-slider": "^8.6.1",
     "react": "15.4.2",
+    "rc-slider-fix": "/home/idest/projects/cloned/rc-slider-fix",
     "react-dom": "15.4.2"
   },
   "devDependencies": {

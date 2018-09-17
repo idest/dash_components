@@ -34,6 +34,27 @@
       }
     }
   },
+  "src/lib/components/Import.react.js": {
+    "description": "Import serves for the only purpose to force Dash to load idest-dash-components.\nThis is useful when you want to use grasia components that are going to be\nadded dynamically to the Dash app layout.",
+    "displayName": "Import",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "src": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "local or external source of the javascript to import"
+      }
+    }
+  },
   "src/lib/components/Slider.react.js": {
     "description": "A slider component with a single handle.",
     "displayName": "Slider",

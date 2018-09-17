@@ -17,10 +17,10 @@ app.layout = html.Div([
     ),
     idest_dash_components.Slider(
         id='input-slider',
-        min=0,
-        max=10,
-        step=1,
-        value=5,
+        min=1e-7,
+        max=5e-7,
+        step=1e-8,
+        value=3e-7,
     ),
     html.Div(id='output', style={'margin-top': 40}),
     html.Div(id='output-slider')
